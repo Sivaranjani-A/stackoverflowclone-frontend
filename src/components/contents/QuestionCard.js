@@ -42,7 +42,7 @@ function QuestionCard({ data }) {
                         <button onClick={() => handleView(data)} className='btn btn-info mr-1'>View Answers</button>
                     </div>
                     <div className='col d-flex justify-content-end'>
-                        <p className='m-2'>Total Answers: {len}</p>
+                        <p className='m-2'>Answers: {len}</p>
                         <p className='m-2'>Views {data.view}</p>
                     </div>
                 </div>
