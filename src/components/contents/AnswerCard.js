@@ -8,7 +8,7 @@ function AnswerCard({ data }) {
     const [loading, setLoading] = useState(false)
     const [votes, setvotes] = useState(data.votes);
     const handleVotes = async (data) => {
-        console.log(data);
+
         setLoading(true)
         setvotes(data.votes = data.votes + 1);
         try {

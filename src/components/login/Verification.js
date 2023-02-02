@@ -22,11 +22,11 @@ function Verification() {
             return errors;
         },
         onSubmit: async (values) => {
-            console.log(values);
+
             try {
                 const res = await axios.post(`${config.api}/verify`, values);
                 userContextData.setforgotUser(res.data);
-                console.log(res.data);
+
                 if (res.data) {
                     alert("Verified ✅");
                     navigate('/ChangePassword');

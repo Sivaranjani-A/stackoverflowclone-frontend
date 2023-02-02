@@ -37,7 +37,7 @@ function Answers() {
             },
             onSubmit: async (values) => {
                 try {
-                    console.log(values);
+
                     const question = await axios.post(`${config.api}/postAnswer/${quesid.id}`, values, {
                         headers: {
                             'Authorization': `${localStorage.getItem('react_token')}`
