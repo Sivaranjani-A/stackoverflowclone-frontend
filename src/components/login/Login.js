@@ -83,7 +83,7 @@ function Login() {
                                         </form>
                                         <div className="row">
                                             <Link to='/ForgetPassword'>
-                                                Forget Password!😔
+                                                Forgot Password?😔
                                             </Link>
                                             <Link to='/register'>
                                                 Create an Account...! 👈
