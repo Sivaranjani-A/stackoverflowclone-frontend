@@ -11,7 +11,7 @@ function Navbar() {
   const userContextData = useContext(UserContext);
   const navigate = useNavigate();
   const Home = () => {
-    fetchData();
+    userContextData.setquestions(userData.data);
     navigate('/Portal/Dashboard');
 
   }
