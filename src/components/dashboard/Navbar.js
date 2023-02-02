@@ -11,10 +11,11 @@ function Navbar() {
   const userContextData = useContext(UserContext);
   const navigate = useNavigate();
   const Home = () => {
-    userContextData.setquestions(userData.data);
     navigate('/Portal/Dashboard');
-
   }
+
+
+
   const formik = useFormik(
     {
       initialValues: {
