@@ -18,6 +18,7 @@ function Profile() {
         <div class="card-body">
           <h5 class="card-title">Name: {userContextData.LoginPerson.username}</h5>
           <p class="card-text"><b>Email: </b>{userContextData.LoginPerson.email}</p>
+          <p class="card-text"><b>Age: </b>{userContextData.LoginPerson.age}</p>
           <p class="card-text"><b>Location: </b>{userContextData.LoginPerson.location}</p>
           <p class="card-text"><b>Profession: </b>{userContextData.LoginPerson.profession}</p>
           <p class="card-text"><b>About: </b>{userContextData.LoginPerson.aboutme}</p>

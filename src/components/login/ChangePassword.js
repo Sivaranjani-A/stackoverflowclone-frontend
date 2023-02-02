@@ -16,6 +16,7 @@ function Register() {
             initialValues: {
                 username: `${input.username}`,
                 email: `${input.email}`,
+                age: `${input.age}`,
                 location: `${input.location}`,
                 aboutme: `${input.aboutme}`,
                 profession: `${input.profession}`,
@@ -37,6 +38,9 @@ function Register() {
 
                 if (!values.email) {
                     errors.email = 'Please enter your email address'
+                }
+                if (!values.age) {
+                    errors.age = 'Please enter your age'
                 }
                 if (!values.location) {
                     errors.location = 'Please enter the age'
@@ -112,12 +116,12 @@ function Register() {
                     <div className="col-lg-6">
                         <div className="form-group">
                             <input
-                                // type={"text"}
+                                type={"number"}
                                 className="form-control form-control-user"
-                                // name={'imageurl'}
-                                // onChange={formik.handleChange}
-                                value={formik.values.imageurl}
-                                placeholder="Enter image url"
+                                name={'age'}
+                                onChange={formik.handleChange}
+                                value={formik.values.age}
+                                placeholder="Enter age"
                             />
                         </div>
                     </div>
